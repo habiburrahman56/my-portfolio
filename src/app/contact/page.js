@@ -106,9 +106,9 @@ export default function Contact() {
             />
             <div className="mt-4 text-left w-full">
               <h3 className="text-2xl font-semibold capitalize"> Munna</h3>
-              <p className="text-gray-300">Front-End Web Developer & Wordpress Specialist</p>
+              <p className="text-gray-300 mt-2">Front-End Web Developer &  Wordpress Specialist</p>
 
-              <div className="mt-6 flex flex-col gap-4 text-gray-300">
+              <div className="mt-6 flex flex-col gap-2.5 text-gray-300">
                 <p>
                   <span className="font-semibold text-green-400">Phone:</span> +880 01314902856
                 </p>

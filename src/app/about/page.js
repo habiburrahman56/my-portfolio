@@ -28,7 +28,7 @@ export default function About() {
           type="submit"
           className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition capitalize"
         >
-          contact us
+          contact me
         </button>
       </section>
 

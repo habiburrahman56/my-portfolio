@@ -73,7 +73,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition"
+              className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition capitalize"
             >
               Send Email Directly
             </button>

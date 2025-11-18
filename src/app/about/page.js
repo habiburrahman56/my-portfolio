@@ -23,6 +23,13 @@ export default function About() {
           WordPress. I focus on writing clean, efficient code while delivering
           engaging digital experiences that meet both business and user needs.
         </p>
+
+        <button
+          type="submit"
+          className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition capitalize"
+        >
+          contact us
+        </button>
       </section>
 
       <Footer />

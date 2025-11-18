@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Munna's Portfolio",
   description: "Powered By Munna",
+  icons: {
+    icon: "",
+  },
 };
 
 export default function RootLayout({

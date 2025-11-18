@@ -1,38 +1,3 @@
-// "use client";
-// import { motion } from "framer-motion";
-// import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
-
-// export default function Home() {
-//   return (
-//     <main className="bg-black text-white min-h-screen">
-//       <Navbar />
-//       {/* HERO */}
-//       <section className="flex flex-col justify-center items-center min-h-screen px-6 text-center">
-//         <motion.h1
-//           initial={{ opacity: 0, y: 40 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           className="text-6xl font-bold"
-//         >
-//           Hi, I'm <span className="text-green-400">Munna</span>
-//         </motion.h1>
-
-//         <p className="text-lg text-gray-300 mt-4 max-w-xl">
-//           Front-End Developer skilled in HTML, CSS, JavaScript, React, Tailwind & Next.js.
-//         </p>
-
-//         <a
-//           href="/projects"
-//           className="mt-8 px-8 py-4 bg-green-400 text-black rounded-lg font-semibold"
-//         >
-//           View My Work
-//         </a>
-//       </section>
-//       <Footer />
-//     </main>
-//   );
-// }
-
 "use client";
 import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";

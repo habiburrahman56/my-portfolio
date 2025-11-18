@@ -16,7 +16,6 @@ export default function Contact() {
 
         {/* Two Columns: Desktop/Tablet side by side, Mobile stacked */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
           {/* Left: Profile / Info */}
           <div className="flex flex-col items-center md:items-start gap-6 bg-white/10 px-6 py-10 lg:p-12 rounded-2xl backdrop-blur text-center">
             <img
@@ -26,17 +25,24 @@ export default function Contact() {
             />
             <div className="mt-4 text-left w-full">
               <h3 className="text-2xl font-semibold capitalize"> Munna</h3>
-              <p className="text-gray-300 mt-2">Front-End Web Developer &  Wordpress Specialist</p>
+              <p className="text-gray-300 mt-2">
+                Front-End Web Developer & Wordpress Specialist
+              </p>
 
               <div className="mt-6 flex flex-col gap-2.5 text-gray-300">
                 <p>
-                  <span className="font-semibold text-green-400">Phone:</span> +880 01314902856
+                  <span className="font-semibold text-green-400">Phone:</span>{" "}
+                  +880 01314902856
                 </p>
                 <p>
-                  <span className="font-semibold text-green-400">Email:</span> habiburrahmanmunna56@gmail.com
+                  <span className="font-semibold text-green-400">Email:</span>{" "}
+                  habiburrahmanmunna56@gmail.com
                 </p>
                 <p>
-                  <span className="font-semibold text-green-400">Location:</span> Sylhet, Bangladesh
+                  <span className="font-semibold text-green-400">
+                    Location:
+                  </span>{" "}
+                  Sylhet, Bangladesh
                 </p>
               </div>
             </div>
@@ -54,7 +60,9 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col text-left">
-              <label className="text-sm text-gray-300 mb-2">Email Address</label>
+              <label className="text-sm text-gray-300 mb-2">
+                Email Address
+              </label>
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -85,4 +93,3 @@ export default function Contact() {
     </main>
   );
 }
-

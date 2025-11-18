@@ -16,10 +16,12 @@ export default function About() {
 
         <h2 className="text-3xl sm:text-4xl font-semibold mb-6">About Me</h2>
 
-        <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed">
-          I am a passionate Front-End Developer who loves transforming ideas
-          into real, responsive, and beautiful websites. My focus is on clean
-          UI, animations, and seamless user experiences.
+        <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed capitalize">
+          I am a passionate Front-End Developer specializing in creating modern,
+          responsive, and user-friendly web applications. My expertise includes
+          HTML, CSS, Tailwind CSS, JavaScript, React, Next.js, TypeScript, and
+          WordPress. I focus on writing clean, efficient code while delivering
+          engaging digital experiences that meet both business and user needs.
         </p>
       </section>
 

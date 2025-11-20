@@ -26,7 +26,7 @@ export default function About() {
         </p>
 
         <Link href="/contact">
-          <button className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition capitalize">
+          <button className="mt-8 inline-block px-8 py-4 bg-green-400 text-black rounded-lg font-semibold capitalize">
             contact me
           </button>
         </Link>

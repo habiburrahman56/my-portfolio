@@ -28,7 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="geist-c531dabc-module_... variable_mono_60a01160-module_... variable_variabl..."
+        cr-shortcut-listen="true" suppressHydrationWarning={true}
       >
         {children}
       </body>

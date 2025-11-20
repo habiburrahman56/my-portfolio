@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -25,12 +26,12 @@ export default function Home() {
             Tailwind, Next.js, Typescript, & Wordpress.
           </p>
 
-          <a
+          <Link
             href="/projects"
             className="mt-8 inline-block px-8 py-4 bg-green-400 text-black rounded-lg font-semibold"
           >
             View My Work
-          </a>
+          </Link>
         </div>
 
         {/* RIGHT IMAGE */}

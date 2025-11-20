@@ -44,7 +44,7 @@ export default function Home() {
           <img
             src="/my-image.png"
             alt="My Image"
-            className="w-72 md:w-[420px]  lg:w-[420px] rounded-full shadow-xl object-cover"
+            className="w-72 md:w-[600px]  lg:w-[420px] rounded-full shadow-xl object-cover"
           />
         </motion.div>
       </section>

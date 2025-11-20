@@ -70,7 +70,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* LEFT SIDE */}
-          <div className="flex flex-col items-center md:items-start gap-6 bg-white/10 px-6 py-10 lg:p-12 rounded-2xl backdrop-blur text-center">
+<div className="flex flex-col items-center md:items-start gap-6 bg-white/10 px-6 py-10 lg:p-12 rounded-2xl backdrop-blur text-center">
             <img
               src="/my-image.png"
               alt="Munna"
@@ -85,12 +85,20 @@ export default function Contact() {
               <div className="mt-6 flex flex-col gap-2.5 text-gray-300">
                 <p>
                   <span className="font-semibold text-green-400">Phone:</span>{" "}
-                  +880 01314902856
+                  <a href="tel:+8801314902856" className="hover:underline">
+                    +880 01314902856
+                  </a>
                 </p>
                 <p>
                   <span className="font-semibold text-green-400">Email:</span>{" "}
-                  habiburrahmanmunna56@gmail.com
+                  <a
+                    href="mailto:habiburrahmanmunna56@gmail.com"
+                    className="hover:underline"
+                  >
+                    habiburrahmanmunna56@gmail.com
+                  </a>
                 </p>
+
                 <p>
                   <span className="font-semibold text-green-400">
                     Location:

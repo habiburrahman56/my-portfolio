@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -24,12 +25,11 @@ export default function About() {
           engaging digital experiences that meet both business and user needs.
         </p>
 
-        <button
-          type="submit"
-          className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition capitalize"
-        >
-          contact me
-        </button>
+        <Link href="/contact">
+          <button className="w-full py-4 bg-green-400 text-black font-semibold rounded-lg hover:bg-green-500 transition capitalize">
+            contact me
+          </button>
+        </Link>
       </section>
 
       <Footer />

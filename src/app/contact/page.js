@@ -70,7 +70,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* LEFT SIDE */}
-<div className="flex flex-col items-center md:items-start gap-6 bg-white/10 px-6 py-10 lg:p-12 rounded-2xl backdrop-blur text-center">
+          <div className="flex flex-col items-center md:items-start gap-6 bg-white/10 px-6 py-10 lg:p-12 rounded-2xl backdrop-blur text-center">
             <img
               src="/my-image.png"
               alt="Munna"

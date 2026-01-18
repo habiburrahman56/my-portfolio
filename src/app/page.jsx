@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen flex flex-col justify-center items-center ">
       <Navbar />
-
       {/* HERO */}
       <section className=" container max-w-6xl mx-auto py-32 flex flex-col lg:flex-row justify-between items-center min-h-screen px-6 lg:px-20 gap-12">
         {/* LEFT CONTENT */}

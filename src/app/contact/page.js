@@ -14,46 +14,28 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     setError("");
     setSuccess("");
 
-    if (!name || !email || !message) {
-      setError("All fields are required!");
-      return;
+    try {
+      const res = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (!res.ok) throw new Error();
+
+      setSuccess("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setError("Failed to send message. Try again!");
+    } finally {
+      setLoading(false);
     }
-
-    // Basic email validation
-    const emailRegex = /\S+@\S+\.\S+/;
-    if (!emailRegex.test(email)) {
-      setError("Enter a valid email address!");
-      return;
-    }
-
-    setLoading(true); // Start loading
-
-    // Simulate 2 second delay
-    setTimeout(async () => {
-      try {
-        const res = await fetch("/api/sendEmail", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, message }),
-        });
-
-        if (res.ok) {
-          setSuccess("Message sent successfully!");
-          setName("");
-          setEmail("");
-          setMessage("");
-        } else {
-          setError("Failed to send message. Try again!");
-        }
-      } catch (err) {
-        setError("Something went wrong!");
-      } finally {
-        setLoading(false); // Stop loading
-      }
-    }, 1000); // ⏱ 2 seconds
   };
 
   return (

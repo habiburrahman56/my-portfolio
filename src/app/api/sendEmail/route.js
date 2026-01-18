@@ -1,11 +1,13 @@
 import nodemailer from "nodemailer";
 
-export async function POST(request) {
+export async function POST(req) {
   try {
-    const { name, email, message } = await request.json();
+    const { name, email, message } = await req.json();
 
     if (!name || !email || !message) {
-      return new Response("Missing fields", { status: 400 });
+      return new Response(JSON.stringify({ error: "Missing fields" }), {
+        status: 400,
+      });
     }
 
     const transporter = nodemailer.createTransport({
@@ -16,25 +18,24 @@ export async function POST(request) {
       },
     });
 
-    const mailOptions = {
-      from: process.env.MY_EMAIL,
-      replyTo: email,
+    await transporter.sendMail({
+      from: `"Portfolio Contact" <${process.env.MY_EMAIL}>`,
       to: process.env.MY_EMAIL,
-      subject: `New Contact Message from ${name}`,
+      replyTo: email,
+      subject: `New message from ${name}`,
       html: `
-        <h2>New Contact Message</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong><br/>${message}</p>
+        <h3>New Contact Message</h3>
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Email:</b> ${email}</p>
+        <p><b>Message:</b><br/>${message}</p>
       `,
-    };
+    });
 
-    await transporter.sendMail(mailOptions);
-
-    return new Response("Email Sent Successfully!", { status: 200 });
-
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
-    console.error("Email sending error:", error);
-    return new Response("Email Failed!", { status: 500 });
+    console.error("EMAIL ERROR:", error);
+    return new Response(JSON.stringify({ error: "Email failed" }), {
+      status: 500,
+    });
   }
 }
